@@ -1,0 +1,348 @@
+body {
+    background: rgba(161, 161, 161, 1);
+}
+
+div[class*="ridesrow"],
+div[class*="foodandshoprow"] {
+    font-family: sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+.title h1 {
+    font-size: 70px;
+}
+
+summary {
+    width: 200px;
+    font-family: Arvo;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+@keyframes slidefromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#booking-button {
+    animation: none;
+}
+
+nav {
+    animation: 0.7s ease-out 0s 1 slidefromTop;
+}
+
+
+/* Make it a marquee */
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: black;
+    color: #FFFF00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+
+/* Make it move */
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+/*Attractions and Amenities CSS*/
+
+.ridesandgames p {
+    width: 490px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.segmentTitle {
+    font-family: creepster;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.segmentTitle h2 {
+    margin: 0px 96px 0px;
+    font-size: 50px;
+}
+
+.title1row img {
+    align-items: flex-end;
+    position: absolute;
+    margin-top: -87px;
+    margin-left: -31px;
+}
+
+.ridesandgames {
+    padding: 20px;
+    background: transparent;
+    margin: 2px;
+}
+
+.rideinfo {
+    display: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    /* background: #18395a;
+    color: #ffffff; */
+    background: #000000;
+    color: #F08F21;
+    display: flex;
+    justify-content: center;
+    border-radius: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ridesandgames img {
+    border-radius: 25px;
+    border-width: 10px;
+    border-style: solid;
+    width: 700px;
+    height: 420px;
+    filter: drop-shadow(10px 12px 5px rgba(0, 0, 0, 0.25));
+}
+
+.ridesandgames.rng1 img {
+    border-color: #CfC709;
+}
+
+.ridesandgames.rng2 img {
+    border-color: #A34869;
+}
+
+.ridesandgames.rng3 img {
+    border-color: #363840;
+}
+
+.ridesandgames.rng4 img {
+    border-color: #A15D18;
+    ;
+}
+
+.ridesandgames.rng5 img {
+    border-color: #082CB0;
+    ;
+}
+
+.ridesrow1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.ridesrow2 {
+    display: flex;
+    justify-content: center;
+}
+
+.creepysmile {
+    position: absolute;
+    left: 30px;
+    top: 1091px;
+    z-index: -1;
+}
+
+.creepysmile img {
+    width: 400px;
+    transform: rotate(-37deg);
+    opacity: 54%;
+}
+
+.ridesrow3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.segmentTitle.food {
+    margin-top: 40px;
+}
+
+.pumpkinimage {
+    position: absolute;
+}
+
+.pumpkinimage img {
+    width: auto;
+    height: 77px;
+    transform: rotate(-30deg);
+}
+
+.foodandshoprow1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.foodandshoprow2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.left-image {
+    position: absolute;
+    bottom: 1px;
+    left: 1%;
+}
+
+.left-image img {
+    width: 225px;
+}
+
+.right-image {
+    position: absolute;
+    bottom: 1px;
+    right: 1%;
+}
+
+.right-image img {
+    width: 300px;
+}
+
+.foodandshopping {
+    padding: 20px;
+}
+
+.foodandshopping p {
+    width: 490px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.foodandshopping .fnsimage {
+    border-radius: 10px;
+    width: auto;
+}
+
+.foodandshopping .fnsimage {
+    border-radius: 25px;
+    border-width: 10px;
+    border-style: solid;
+    width: 700px;
+    height: 420px;
+    overflow: hidden;
+    filter: drop-shadow(10px 12px 5px rgba(0, 0, 0, 0.25));
+}
+
+.foodandshopping.fns1 .fnsimage {
+    border-color: #A34869;
+}
+
+.foodandshopping.fns1 img {
+    margin: -132px 0px 0px 0px;
+    width: 700px;
+}
+
+.foodandshopping.fns2 .fnsimage {
+    border-color: #363840;
+}
+
+.foodandshopping.fns2 img {
+    margin: -19px 0px 0px 0px;
+    width: 700px;
+}
+
+.foodandshopping.fns3 .fnsimage {
+    border-color: #CfC709;
+}
+
+.foodandshopping.fns3 img {
+    margin: 0px 0px 0px -240px;
+    height: 420px;
+}
+
+img[alt*="Pumpkin with Gravestone image"] {
+    display: flex;
+    justify-content: center;
+    float: left;
+    filter: drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.25));
+}
+
+img[alt*="Pumpkin with Moon image"] {
+    display: flex;
+    justify-content: center;
+    float: right;
+    filter: drop-shadow(10px -9px 3px rgba(0, 0, 0, 0.25));
+}
+
+summary {
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+details[open] summary~* {
+    animation: sweep 0.2s ease-in-out;
+    animation-delay: 0s
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: 0px
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0px
+    }
+}
+
+.bat {
+    position: absolute;
+    z-index: -1;
+}
+
+.bat1 {
+    position: absolute;
+    left: 867px;
+    transform: rotate(-43deg);
+}
+
+.bat2 {
+    position: absolute;
+    left: 1550px;
+    top: 1169px;
+    transform: rotate(23deg);
+}
